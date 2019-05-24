@@ -9,3 +9,5 @@ C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\
 C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
 C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
 C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.AuthForm.resources
+C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.UserForm.resources
+C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.WareForm.resources

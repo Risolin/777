@@ -42,7 +42,7 @@ namespace WindowsFormsApp4
             if (textBox1.Text == "")
             {
                 errors++;
-                message += "Пожалуйста введите имя\n";
+                message += "Пожалуйста введите ФИО\n";
 
             }
             if (textBox2.Text == "")
@@ -96,6 +96,13 @@ namespace WindowsFormsApp4
                 catch
                 {
                     MessageBox.Show("Возникла ошибка.");
+                }
+                finally
+                {
+                    this.Hide();
+                    AuthForm aut = new AuthForm();
+                    aut.Show();
+
                 }
             }
 
