@@ -13,7 +13,9 @@ namespace WindowsFormsApp4
 {
     public partial class Form1 : Form
     {
-        public partial class AuthForm : Form { }
+        SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-9G8HOK7A\SQLEXPRESS; Database=Soloveva_Olifir; Integrated Security=True; MultipleActiveResultSets=True");
+
+            public partial class AuthForm : Form { }
  
             SqlConnection connection = new SqlConnection(Properties.Settings.Default.Параметр);
 
@@ -24,18 +26,24 @@ namespace WindowsFormsApp4
                 InitializeComponent();
                 }
 
-          
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+            auth = new AuthForm();
+            auth.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             int errors = 0;
 
             String message = "";
 
 
-            if(textBox1.Text == "")
+            if (textBox1.Text == "")
             {
-                errors++;   
+                errors++;
                 message += "Пожалуйста введите имя\n";
 
             }
@@ -62,7 +70,7 @@ namespace WindowsFormsApp4
                 errors++;
                 message += "Пароли не совпадают!\n";
             }
-            if (errors>0)
+            if (errors > 0)
             {
                 MessageBox.Show(message);
             }
@@ -95,12 +103,6 @@ namespace WindowsFormsApp4
 
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
-            auth = new AuthForm();
-            auth.Show();
-        }
     }
-}
+    }
+

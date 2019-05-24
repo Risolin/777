@@ -26,35 +26,7 @@ namespace WindowsFormsApp4
             Form1 newForm = new Form1();
             newForm.Show();
             this.Hide();
-            connection.Open();
-            try
 
-            {
-
-                SqlCommand command = new SqlCommand("INSERT INTO users (login,password,role,name) VALUES (@login,@password,@role,@name)", connection);
-
-                command.Parameters.AddWithValue("@login", textBox2.Text);
-
-                command.Parameters.AddWithValue("@password", textBox3.Text);
-
-                command.Parameters.AddWithValue("@role", "User");
-
-                command.Parameters.AddWithValue("@name", textBox1.Text);
-
-                int regged = Convert.ToInt32(command.ExecuteNonQuery());
-
-                connection.Close();
-
-                MessageBox.Show("Пользователь успешно зарегистрировался!\n");
-
-            }
-            catch
-
-            {
-
-                MessageBox.Show("Такой пользователь существует!\n");
-
-
-            }
         }
+    }
 }
