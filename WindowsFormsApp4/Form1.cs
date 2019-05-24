@@ -95,7 +95,7 @@ namespace WindowsFormsApp4
                 }
                 catch
                 {
-                    MessageBox.Show("Такой пользователь уже существует.");
+                    MessageBox.Show("Возникла ошибка.");
                 }
             }
 
