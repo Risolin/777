@@ -14,8 +14,6 @@ namespace WindowsFormsApp4
     public partial class AuthForm : Form { 
         SqlConnection connection = new SqlConnection(Properties.Settings.Default.Параметр);
 
-        Form auth; // null
-    
         public AuthForm()
         {
             InitializeComponent();
@@ -23,7 +21,7 @@ namespace WindowsFormsApp4
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form1 newForm = new Form1();
+            Form newForm = new Form1();
             newForm.Show();
             this.Hide();
 

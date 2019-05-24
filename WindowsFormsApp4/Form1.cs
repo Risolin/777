@@ -13,13 +13,11 @@ namespace WindowsFormsApp4
 {
     public partial class Form1 : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-9G8HOK7A\SQLEXPRESS; Database=Soloveva_Olifir; Integrated Security=True; MultipleActiveResultSets=True");
-
-            public partial class AuthForm : Form { }
+             
  
             SqlConnection connection = new SqlConnection(Properties.Settings.Default.Параметр);
 
-            Form auth; // null
+           
 
             public Form1()
                 {
@@ -29,8 +27,8 @@ namespace WindowsFormsApp4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
-            auth = new AuthForm();
+            this.Close();
+            AuthForm auth = new AuthForm();
             auth.Show();
         }
 
@@ -79,15 +77,15 @@ namespace WindowsFormsApp4
                 connection.Open();
                 try
                 {
-                    SqlCommand command = new SqlCommand("INSERT INTO users (login,password,role,name) VALUES (@login,@password,@role,@name)", connection);
+                    SqlCommand command = new SqlCommand("INSERT INTO Пользователь (Логин,Пароль,Роль,Наименование) VALUES (@Логин,@Пароль,@Роль,@Наименование)", connection);
 
-                    command.Parameters.AddWithValue("@login", textBox2.Text);
+                    command.Parameters.AddWithValue("@Логин", textBox2.Text);
 
-                    command.Parameters.AddWithValue("@password", textBox3.Text);
+                    command.Parameters.AddWithValue("@Пароль", textBox3.Text);
 
-                    command.Parameters.AddWithValue("@role", "User");
+                    command.Parameters.AddWithValue("@Роль", "User");
 
-                    command.Parameters.AddWithValue("@name", textBox1.Text);
+                    command.Parameters.AddWithValue("@Наименование", textBox1.Text);
 
                     int regged = Convert.ToInt32(command.ExecuteNonQuery());
 
