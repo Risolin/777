@@ -35,5 +35,16 @@ namespace WindowsFormsApp4.Properties {
                 this["Параметр"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-9G8HOK7A\\SQLEXPRESS;Initial Catalog=Soloveva_Olifir;Integrated" +
+            " Security=True")]
+        public string Soloveva_OlifirConnectionString {
+            get {
+                return ((string)(this["Soloveva_OlifirConnectionString"]));
+            }
+        }
     }
 }
