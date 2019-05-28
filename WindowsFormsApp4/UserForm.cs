@@ -53,5 +53,15 @@ namespace WindowsFormsApp4
             izdelieForm.Show();
             this.Hide();
         }
+
+        private void конструкторToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConstructorForm constructor = new ConstructorForm();
+            constructor.Show();
+            this.Hide();
+
+        
+
+        }
     }
 }

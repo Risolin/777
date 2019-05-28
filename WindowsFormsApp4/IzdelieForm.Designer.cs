@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.soloveva_OlifirDataSet5 = new WindowsFormsApp4.Soloveva_OlifirDataSet5();
-            this.изделияBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.изделияTableAdapter = new WindowsFormsApp4.Soloveva_OlifirDataSet5TableAdapters.ИзделияTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,12 +37,15 @@
             this.длинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.изображениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.комментарийDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.изделияBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.soloveva_OlifirDataSet5 = new WindowsFormsApp4.Soloveva_OlifirDataSet5();
+            this.изделияTableAdapter = new WindowsFormsApp4.Soloveva_OlifirDataSet5TableAdapters.ИзделияTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.изделияBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -65,20 +65,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(976, 336);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // soloveva_OlifirDataSet5
-            // 
-            this.soloveva_OlifirDataSet5.DataSetName = "Soloveva_OlifirDataSet5";
-            this.soloveva_OlifirDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // изделияBindingSource
-            // 
-            this.изделияBindingSource.DataMember = "Изделия";
-            this.изделияBindingSource.DataSource = this.soloveva_OlifirDataSet5;
-            // 
-            // изделияTableAdapter
-            // 
-            this.изделияTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -123,6 +109,20 @@
             this.комментарийDataGridViewTextBoxColumn.HeaderText = "Комментарий";
             this.комментарийDataGridViewTextBoxColumn.Name = "комментарийDataGridViewTextBoxColumn";
             // 
+            // изделияBindingSource
+            // 
+            this.изделияBindingSource.DataMember = "Изделия";
+            this.изделияBindingSource.DataSource = this.soloveva_OlifirDataSet5;
+            // 
+            // soloveva_OlifirDataSet5
+            // 
+            this.soloveva_OlifirDataSet5.DataSetName = "Soloveva_OlifirDataSet5";
+            this.soloveva_OlifirDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // изделияTableAdapter
+            // 
+            this.изделияTableAdapter.ClearBeforeFill = true;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 360);
@@ -141,6 +141,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Удалить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -165,8 +166,8 @@
             this.Text = "IzdelieForm";
             this.Load += new System.EventHandler(this.IzdelieForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.изделияBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -49,9 +49,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.soloveva_OlifirDataSet7 = new WindowsFormsApp4.Soloveva_OlifirDataSet7();
-            this.фурнитураBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.фурнитураTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet7TableAdapters.ФурнитураTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,13 +58,16 @@
             this.весDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.изображениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.фурнитураBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.soloveva_OlifirDataSet7 = new WindowsFormsApp4.Soloveva_OlifirDataSet7();
+            this.фурнитураTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet7TableAdapters.ФурнитураTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -215,6 +215,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Удалить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -224,6 +225,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Сохранить";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView1
             // 
@@ -244,20 +246,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(939, 348);
             this.dataGridView1.TabIndex = 6;
-            // 
-            // soloveva_OlifirDataSet7
-            // 
-            this.soloveva_OlifirDataSet7.DataSetName = "Soloveva_OlifirDataSet7";
-            this.soloveva_OlifirDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // фурнитураBindingSource1
-            // 
-            this.фурнитураBindingSource1.DataMember = "Фурнитура";
-            this.фурнитураBindingSource1.DataSource = this.soloveva_OlifirDataSet7;
-            // 
-            // фурнитураTableAdapter1
-            // 
-            this.фурнитураTableAdapter1.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -314,6 +302,20 @@
             this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
             // 
+            // фурнитураBindingSource1
+            // 
+            this.фурнитураBindingSource1.DataMember = "Фурнитура";
+            this.фурнитураBindingSource1.DataSource = this.soloveva_OlifirDataSet7;
+            // 
+            // soloveva_OlifirDataSet7
+            // 
+            this.soloveva_OlifirDataSet7.DataSetName = "Soloveva_OlifirDataSet7";
+            this.soloveva_OlifirDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // фурнитураTableAdapter1
+            // 
+            this.фурнитураTableAdapter1.ClearBeforeFill = true;
+            // 
             // FurnitureForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,7 +327,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "FurnitureForm";
-            this.Text = "FurnitureForm";
+            this.Text = "  ";
             this.Load += new System.EventHandler(this.FurnitureForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -333,8 +335,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -66,28 +66,28 @@
             // изделияToolStripMenuItem
             // 
             this.изделияToolStripMenuItem.Name = "изделияToolStripMenuItem";
-            this.изделияToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изделияToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.изделияToolStripMenuItem.Text = "Изделия";
             this.изделияToolStripMenuItem.Click += new System.EventHandler(this.изделияToolStripMenuItem_Click);
             // 
             // тканиToolStripMenuItem
             // 
             this.тканиToolStripMenuItem.Name = "тканиToolStripMenuItem";
-            this.тканиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.тканиToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.тканиToolStripMenuItem.Text = "Ткани";
             this.тканиToolStripMenuItem.Click += new System.EventHandler(this.тканиToolStripMenuItem_Click);
             // 
             // фурнитураToolStripMenuItem
             // 
             this.фурнитураToolStripMenuItem.Name = "фурнитураToolStripMenuItem";
-            this.фурнитураToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.фурнитураToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.фурнитураToolStripMenuItem.Text = "Фурнитура ";
             this.фурнитураToolStripMenuItem.Click += new System.EventHandler(this.фурнитураToolStripMenuItem_Click);
             // 
             // заказыToolStripMenuItem
             // 
             this.заказыToolStripMenuItem.Name = "заказыToolStripMenuItem";
-            this.заказыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.заказыToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.заказыToolStripMenuItem.Text = "Заказы";
             this.заказыToolStripMenuItem.Click += new System.EventHandler(this.заказыToolStripMenuItem_Click);
             // 
@@ -96,6 +96,7 @@
             this.конструкторToolStripMenuItem.Name = "конструкторToolStripMenuItem";
             this.конструкторToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.конструкторToolStripMenuItem.Text = "Конструктор";
+            this.конструкторToolStripMenuItem.Click += new System.EventHandler(this.конструкторToolStripMenuItem_Click);
             // 
             // заказToolStripMenuItem
             // 
