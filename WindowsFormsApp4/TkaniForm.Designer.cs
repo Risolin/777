@@ -38,19 +38,18 @@
             this.тканиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.тканиTableAdapter = new WindowsFormsApp4.Soloveva_OlifirDataSet2TableAdapters.ТканиTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.тканиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.soloveva_OlifirDataSet6 = new WindowsFormsApp4.Soloveva_OlifirDataSet6();
+            this.тканиTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet6TableAdapters.ТканиTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.цветDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.рисунокDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.изображениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.составDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ширинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.длинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.тканиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.soloveva_OlifirDataSet6 = new WindowsFormsApp4.Soloveva_OlifirDataSet6();
-            this.тканиTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet6TableAdapters.ТканиTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevaOlifirDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet2)).BeginInit();
@@ -124,7 +123,6 @@
             this.наименованиеDataGridViewTextBoxColumn,
             this.цветDataGridViewTextBoxColumn,
             this.рисунокDataGridViewTextBoxColumn,
-            this.изображениеDataGridViewTextBoxColumn,
             this.составDataGridViewTextBoxColumn,
             this.ширинаDataGridViewTextBoxColumn,
             this.длинаDataGridViewTextBoxColumn,
@@ -135,6 +133,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(1042, 375);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // тканиBindingSource1
+            // 
+            this.тканиBindingSource1.DataMember = "Ткани";
+            this.тканиBindingSource1.DataSource = this.soloveva_OlifirDataSet6;
+            // 
+            // soloveva_OlifirDataSet6
+            // 
+            this.soloveva_OlifirDataSet6.DataSetName = "Soloveva_OlifirDataSet6";
+            this.soloveva_OlifirDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // тканиTableAdapter1
+            // 
+            this.тканиTableAdapter1.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -167,12 +179,6 @@
             this.рисунокDataGridViewTextBoxColumn.HeaderText = "Рисунок";
             this.рисунокDataGridViewTextBoxColumn.Name = "рисунокDataGridViewTextBoxColumn";
             // 
-            // изображениеDataGridViewTextBoxColumn
-            // 
-            this.изображениеDataGridViewTextBoxColumn.DataPropertyName = "Изображение";
-            this.изображениеDataGridViewTextBoxColumn.HeaderText = "Изображение";
-            this.изображениеDataGridViewTextBoxColumn.Name = "изображениеDataGridViewTextBoxColumn";
-            // 
             // составDataGridViewTextBoxColumn
             // 
             this.составDataGridViewTextBoxColumn.DataPropertyName = "Состав";
@@ -196,20 +202,6 @@
             this.ценаDataGridViewTextBoxColumn.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
-            // 
-            // тканиBindingSource1
-            // 
-            this.тканиBindingSource1.DataMember = "Ткани";
-            this.тканиBindingSource1.DataSource = this.soloveva_OlifirDataSet6;
-            // 
-            // soloveva_OlifirDataSet6
-            // 
-            this.soloveva_OlifirDataSet6.DataSetName = "Soloveva_OlifirDataSet6";
-            this.soloveva_OlifirDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // тканиTableAdapter1
-            // 
-            this.тканиTableAdapter1.ClearBeforeFill = true;
             // 
             // TkaniForm
             // 
@@ -252,7 +244,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn наименованиеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn цветDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn рисунокDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn изображениеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn составDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ширинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn длинаDataGridViewTextBoxColumn;

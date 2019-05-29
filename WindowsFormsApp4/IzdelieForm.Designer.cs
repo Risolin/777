@@ -30,19 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ширинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.длинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.изображениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.комментарийDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.изделияBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.soloveva_OlifirDataSet5 = new WindowsFormsApp4.Soloveva_OlifirDataSet5();
             this.изделияTableAdapter = new WindowsFormsApp4.Soloveva_OlifirDataSet5TableAdapters.ИзделияTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ширинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.длинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.комментарийDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.изделияBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet5)).BeginInit();
@@ -58,56 +57,12 @@
             this.наименованиеDataGridViewTextBoxColumn,
             this.ширинаDataGridViewTextBoxColumn,
             this.длинаDataGridViewTextBoxColumn,
-            this.изображениеDataGridViewTextBoxColumn,
             this.комментарийDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.изделияBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(976, 336);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // артикулDataGridViewTextBoxColumn
-            // 
-            this.артикулDataGridViewTextBoxColumn.DataPropertyName = "Артикул";
-            this.артикулDataGridViewTextBoxColumn.HeaderText = "Артикул";
-            this.артикулDataGridViewTextBoxColumn.Name = "артикулDataGridViewTextBoxColumn";
-            // 
-            // наименованиеDataGridViewTextBoxColumn
-            // 
-            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
-            // 
-            // ширинаDataGridViewTextBoxColumn
-            // 
-            this.ширинаDataGridViewTextBoxColumn.DataPropertyName = "Ширина";
-            this.ширинаDataGridViewTextBoxColumn.HeaderText = "Ширина";
-            this.ширинаDataGridViewTextBoxColumn.Name = "ширинаDataGridViewTextBoxColumn";
-            // 
-            // длинаDataGridViewTextBoxColumn
-            // 
-            this.длинаDataGridViewTextBoxColumn.DataPropertyName = "Длина";
-            this.длинаDataGridViewTextBoxColumn.HeaderText = "Длина";
-            this.длинаDataGridViewTextBoxColumn.Name = "длинаDataGridViewTextBoxColumn";
-            // 
-            // изображениеDataGridViewTextBoxColumn
-            // 
-            this.изображениеDataGridViewTextBoxColumn.DataPropertyName = "Изображение ";
-            this.изображениеDataGridViewTextBoxColumn.HeaderText = "Изображение ";
-            this.изображениеDataGridViewTextBoxColumn.Name = "изображениеDataGridViewTextBoxColumn";
-            // 
-            // комментарийDataGridViewTextBoxColumn
-            // 
-            this.комментарийDataGridViewTextBoxColumn.DataPropertyName = "Комментарий";
-            this.комментарийDataGridViewTextBoxColumn.HeaderText = "Комментарий";
-            this.комментарийDataGridViewTextBoxColumn.Name = "комментарийDataGridViewTextBoxColumn";
             // 
             // изделияBindingSource
             // 
@@ -153,6 +108,43 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // артикулDataGridViewTextBoxColumn
+            // 
+            this.артикулDataGridViewTextBoxColumn.DataPropertyName = "Артикул";
+            this.артикулDataGridViewTextBoxColumn.HeaderText = "Артикул";
+            this.артикулDataGridViewTextBoxColumn.Name = "артикулDataGridViewTextBoxColumn";
+            // 
+            // наименованиеDataGridViewTextBoxColumn
+            // 
+            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
+            // 
+            // ширинаDataGridViewTextBoxColumn
+            // 
+            this.ширинаDataGridViewTextBoxColumn.DataPropertyName = "Ширина";
+            this.ширинаDataGridViewTextBoxColumn.HeaderText = "Ширина";
+            this.ширинаDataGridViewTextBoxColumn.Name = "ширинаDataGridViewTextBoxColumn";
+            // 
+            // длинаDataGridViewTextBoxColumn
+            // 
+            this.длинаDataGridViewTextBoxColumn.DataPropertyName = "Длина";
+            this.длинаDataGridViewTextBoxColumn.HeaderText = "Длина";
+            this.длинаDataGridViewTextBoxColumn.Name = "длинаDataGridViewTextBoxColumn";
+            // 
+            // комментарийDataGridViewTextBoxColumn
+            // 
+            this.комментарийDataGridViewTextBoxColumn.DataPropertyName = "Комментарий";
+            this.комментарийDataGridViewTextBoxColumn.HeaderText = "Комментарий";
+            this.комментарийDataGridViewTextBoxColumn.Name = "комментарийDataGridViewTextBoxColumn";
+            // 
             // IzdelieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,15 +170,14 @@
         private Soloveva_OlifirDataSet5 soloveva_OlifirDataSet5;
         private System.Windows.Forms.BindingSource изделияBindingSource;
         private Soloveva_OlifirDataSet5TableAdapters.ИзделияTableAdapter изделияTableAdapter;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn артикулDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn наименованиеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ширинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn длинаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn изображениеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn комментарийDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }

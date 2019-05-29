@@ -39,7 +39,7 @@ namespace WindowsFormsApp4
 
             dataGridView1.DataSource = ds.Tables["Изделия"];
 
-            /*
+            
 
                         DataGridViewImageColumn img = new DataGridViewImageColumn();
 
@@ -57,7 +57,7 @@ namespace WindowsFormsApp4
 
                             {
 
-                            //    string basePath = "C:/Users/lickett2019/source/repos/App/App/images/tkani/";
+                                string basePath = @"C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\izdelia\";
 
                                 string filename = dataGridView1.Rows[i].Cells[1].Value.ToString() + ".jpg";
 
@@ -88,7 +88,7 @@ namespace WindowsFormsApp4
                         }
 
 
-                        */
+                        
         }
 
         private void IzdelieForm_Load(object sender, EventArgs e)

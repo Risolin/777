@@ -49,6 +49,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.фурнитураBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.soloveva_OlifirDataSet7 = new WindowsFormsApp4.Soloveva_OlifirDataSet7();
+            this.фурнитураTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet7TableAdapters.ФурнитураTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,11 +59,7 @@
             this.ширинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.длинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.весDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.изображениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.фурнитураBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.soloveva_OlifirDataSet7 = new WindowsFormsApp4.Soloveva_OlifirDataSet7();
-            this.фурнитураTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet7TableAdapters.ФурнитураTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet)).BeginInit();
@@ -239,13 +238,26 @@
             this.ширинаDataGridViewTextBoxColumn,
             this.длинаDataGridViewTextBoxColumn,
             this.весDataGridViewTextBoxColumn,
-            this.изображениеDataGridViewTextBoxColumn,
             this.ценаDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.фурнитураBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(0, 28);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(939, 348);
             this.dataGridView1.TabIndex = 6;
+            // 
+            // фурнитураBindingSource1
+            // 
+            this.фурнитураBindingSource1.DataMember = "Фурнитура";
+            this.фурнитураBindingSource1.DataSource = this.soloveva_OlifirDataSet7;
+            // 
+            // soloveva_OlifirDataSet7
+            // 
+            this.soloveva_OlifirDataSet7.DataSetName = "Soloveva_OlifirDataSet7";
+            this.soloveva_OlifirDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // фурнитураTableAdapter1
+            // 
+            this.фурнитураTableAdapter1.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -290,31 +302,11 @@
             this.весDataGridViewTextBoxColumn.HeaderText = "Вес";
             this.весDataGridViewTextBoxColumn.Name = "весDataGridViewTextBoxColumn";
             // 
-            // изображениеDataGridViewTextBoxColumn
-            // 
-            this.изображениеDataGridViewTextBoxColumn.DataPropertyName = "Изображение ";
-            this.изображениеDataGridViewTextBoxColumn.HeaderText = "Изображение ";
-            this.изображениеDataGridViewTextBoxColumn.Name = "изображениеDataGridViewTextBoxColumn";
-            // 
             // ценаDataGridViewTextBoxColumn
             // 
             this.ценаDataGridViewTextBoxColumn.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
-            // 
-            // фурнитураBindingSource1
-            // 
-            this.фурнитураBindingSource1.DataMember = "Фурнитура";
-            this.фурнитураBindingSource1.DataSource = this.soloveva_OlifirDataSet7;
-            // 
-            // soloveva_OlifirDataSet7
-            // 
-            this.soloveva_OlifirDataSet7.DataSetName = "Soloveva_OlifirDataSet7";
-            this.soloveva_OlifirDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // фурнитураTableAdapter1
-            // 
-            this.фурнитураTableAdapter1.ClearBeforeFill = true;
             // 
             // FurnitureForm
             // 
@@ -373,7 +365,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ширинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn длинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn весDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn изображениеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn;
     }
 }
