@@ -19,10 +19,12 @@ namespace WindowsFormsApp4
         DataSet changes;
         DataSet ds;
         SqlDataAdapter sda;
+        string name;
 
-        public OrderListForm()
+        public OrderListForm(string name)
         {
             InitializeComponent();
+            this.name = name;
         }
         public void LoadList()
 
@@ -101,6 +103,8 @@ namespace WindowsFormsApp4
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            UserForm user = new UserForm(this.name);
+            user.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -12,9 +12,11 @@ namespace WindowsFormsApp4
 {
     public partial class ConstructorForm : Form
     {
-        public ConstructorForm()
+        string name;
+        public ConstructorForm(string name)
         {
             InitializeComponent();
+            this.name = name;
         }
 
         private void ConstructorForm_Load(object sender, EventArgs e)
@@ -25,6 +27,13 @@ namespace WindowsFormsApp4
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            UserForm user = new UserForm(this.name);
+            user.Show();
         }
     }
 }

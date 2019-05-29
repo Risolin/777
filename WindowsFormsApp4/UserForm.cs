@@ -27,7 +27,7 @@ namespace WindowsFormsApp4
 
         private void изделияToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IzdelieForm izdelieForm = new IzdelieForm();
+            IzdelieForm izdelieForm = new IzdelieForm(this.name);
             izdelieForm.Show();
             this.Hide();
 
@@ -35,28 +35,28 @@ namespace WindowsFormsApp4
 
         private void тканиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TkaniForm izdelieForm = new TkaniForm();
+            TkaniForm izdelieForm = new TkaniForm(this.name);
             izdelieForm.Show();
             this.Hide();
         }
 
         private void фурнитураToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           FurnitureForm izdelieForm = new FurnitureForm();
+           FurnitureForm izdelieForm = new FurnitureForm(this.name);
             izdelieForm.Show();
             this.Hide();
         }
 
         private void заказыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OrderListForm izdelieForm = new OrderListForm();
+            OrderListForm izdelieForm = new OrderListForm(this.name);
             izdelieForm.Show();
             this.Hide();
         }
 
         private void конструкторToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConstructorForm constructor = new ConstructorForm();
+            ConstructorForm constructor = new ConstructorForm(this.name);
             constructor.Show();
             this.Hide();
 

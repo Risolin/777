@@ -29,10 +29,12 @@ namespace WindowsFormsApp4
         DataSet changes;
         DataSet ds;
         SqlDataAdapter sda;
+        string name;
 
-        public TkaniForm()
+        public TkaniForm(string name)
         {
             InitializeComponent();
+            this.name = name;
         }
         public void LoadList()
 
@@ -120,6 +122,8 @@ namespace WindowsFormsApp4
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            UserForm us = new UserForm(this.name);
+            us.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
