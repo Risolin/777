@@ -16,3 +16,4 @@ C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\
 C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
 C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
 C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.ConstructorForm.resources
+C:\Users\о\Desktop\Новая папка\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.AddTkani.resources

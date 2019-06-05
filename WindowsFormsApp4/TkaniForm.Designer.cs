@@ -38,9 +38,6 @@
             this.тканиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.тканиTableAdapter = new WindowsFormsApp4.Soloveva_OlifirDataSet2TableAdapters.ТканиTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.тканиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.soloveva_OlifirDataSet6 = new WindowsFormsApp4.Soloveva_OlifirDataSet6();
-            this.тканиTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet6TableAdapters.ТканиTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +47,9 @@
             this.ширинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.длинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.тканиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.soloveva_OlifirDataSet6 = new WindowsFormsApp4.Soloveva_OlifirDataSet6();
+            this.тканиTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet6TableAdapters.ТканиTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solovevaOlifirDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet2)).BeginInit();
@@ -71,7 +71,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(798, 415);
+            this.button2.Location = new System.Drawing.Point(737, 415);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -81,7 +81,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(920, 415);
+            this.button3.Location = new System.Drawing.Point(837, 415);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
@@ -133,20 +133,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1042, 375);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // тканиBindingSource1
-            // 
-            this.тканиBindingSource1.DataMember = "Ткани";
-            this.тканиBindingSource1.DataSource = this.soloveva_OlifirDataSet6;
-            // 
-            // soloveva_OlifirDataSet6
-            // 
-            this.soloveva_OlifirDataSet6.DataSetName = "Soloveva_OlifirDataSet6";
-            this.soloveva_OlifirDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // тканиTableAdapter1
-            // 
-            this.тканиTableAdapter1.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -203,11 +189,25 @@
             this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
             // 
+            // тканиBindingSource1
+            // 
+            this.тканиBindingSource1.DataMember = "Ткани";
+            this.тканиBindingSource1.DataSource = this.soloveva_OlifirDataSet6;
+            // 
+            // soloveva_OlifirDataSet6
+            // 
+            this.soloveva_OlifirDataSet6.DataSetName = "Soloveva_OlifirDataSet6";
+            this.soloveva_OlifirDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // тканиTableAdapter1
+            // 
+            this.тканиTableAdapter1.ClearBeforeFill = true;
+            // 
             // TkaniForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1041, 450);
+            this.ClientSize = new System.Drawing.Size(940, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -43,7 +44,32 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.тканиBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.soloveva_OlifirDataSet11 = new WindowsFormsApp4.Soloveva_OlifirDataSet11();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.фурнитураBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.soloveva_OlifirDataSet9 = new WindowsFormsApp4.Soloveva_OlifirDataSet9();
+            this.soloveva_OlifirDataSet8 = new WindowsFormsApp4.Soloveva_OlifirDataSet8();
+            this.тканиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.тканиTableAdapter = new WindowsFormsApp4.Soloveva_OlifirDataSet8TableAdapters.ТканиTableAdapter();
+            this.фурнитураTableAdapter = new WindowsFormsApp4.Soloveva_OlifirDataSet9TableAdapters.ФурнитураTableAdapter();
+            this.soloveva_OlifirDataSet10 = new WindowsFormsApp4.Soloveva_OlifirDataSet10();
+            this.тканиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.тканиTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet10TableAdapters.ТканиTableAdapter();
+            this.тканиTableAdapter2 = new WindowsFormsApp4.Soloveva_OlifirDataSet11TableAdapters.ТканиTableAdapter();
+            this.soloveva_OlifirDataSet12 = new WindowsFormsApp4.Soloveva_OlifirDataSet12();
+            this.фурнитураBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.фурнитураTableAdapter1 = new WindowsFormsApp4.Soloveva_OlifirDataSet12TableAdapters.ФурнитураTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.тканиBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.тканиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.тканиBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -52,6 +78,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(184, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox3
             // 
@@ -75,6 +102,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Добавить ткань";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -84,6 +112,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Просмотр";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -103,6 +132,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "Сохранить";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel1
             // 
@@ -168,25 +198,104 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DataSource = this.тканиBindingSource2;
+            this.comboBox1.DisplayMember = "Наименование";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(77, 111);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(184, 21);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.ValueMember = "id";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // тканиBindingSource2
+            // 
+            this.тканиBindingSource2.DataMember = "Ткани";
+            this.тканиBindingSource2.DataSource = this.soloveva_OlifirDataSet11;
+            // 
+            // soloveva_OlifirDataSet11
+            // 
+            this.soloveva_OlifirDataSet11.DataSetName = "Soloveva_OlifirDataSet11";
+            this.soloveva_OlifirDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox2
             // 
+            this.comboBox2.DataSource = this.фурнитураBindingSource1;
+            this.comboBox2.DisplayMember = "Наименование";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(77, 301);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(184, 21);
             this.comboBox2.TabIndex = 15;
+            this.comboBox2.ValueMember = "id";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // фурнитураBindingSource
+            // 
+            this.фурнитураBindingSource.DataMember = "Фурнитура";
+            this.фурнитураBindingSource.DataSource = this.soloveva_OlifirDataSet9;
+            // 
+            // soloveva_OlifirDataSet9
+            // 
+            this.soloveva_OlifirDataSet9.DataSetName = "Soloveva_OlifirDataSet9";
+            this.soloveva_OlifirDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // soloveva_OlifirDataSet8
+            // 
+            this.soloveva_OlifirDataSet8.DataSetName = "Soloveva_OlifirDataSet8";
+            this.soloveva_OlifirDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // тканиBindingSource
+            // 
+            this.тканиBindingSource.DataMember = "Ткани";
+            this.тканиBindingSource.DataSource = this.soloveva_OlifirDataSet8;
+            // 
+            // тканиTableAdapter
+            // 
+            this.тканиTableAdapter.ClearBeforeFill = true;
+            // 
+            // фурнитураTableAdapter
+            // 
+            this.фурнитураTableAdapter.ClearBeforeFill = true;
+            // 
+            // soloveva_OlifirDataSet10
+            // 
+            this.soloveva_OlifirDataSet10.DataSetName = "Soloveva_OlifirDataSet10";
+            this.soloveva_OlifirDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // тканиBindingSource1
+            // 
+            this.тканиBindingSource1.DataMember = "Ткани";
+            this.тканиBindingSource1.DataSource = this.soloveva_OlifirDataSet10;
+            // 
+            // тканиTableAdapter1
+            // 
+            this.тканиTableAdapter1.ClearBeforeFill = true;
+            // 
+            // тканиTableAdapter2
+            // 
+            this.тканиTableAdapter2.ClearBeforeFill = true;
+            // 
+            // soloveva_OlifirDataSet12
+            // 
+            this.soloveva_OlifirDataSet12.DataSetName = "Soloveva_OlifirDataSet12";
+            this.soloveva_OlifirDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // фурнитураBindingSource1
+            // 
+            this.фурнитураBindingSource1.DataMember = "Фурнитура";
+            this.фурнитураBindingSource1.DataSource = this.soloveva_OlifirDataSet12;
+            // 
+            // фурнитураTableAdapter1
+            // 
+            this.фурнитураTableAdapter1.ClearBeforeFill = true;
             // 
             // ConstructorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
@@ -196,7 +305,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -206,6 +314,16 @@
             this.Name = "ConstructorForm";
             this.Text = "ConstructorForm";
             this.Load += new System.EventHandler(this.ConstructorForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.тканиBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.тканиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.тканиBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soloveva_OlifirDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +347,20 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private Soloveva_OlifirDataSet8 soloveva_OlifirDataSet8;
+        private System.Windows.Forms.BindingSource тканиBindingSource;
+        private Soloveva_OlifirDataSet8TableAdapters.ТканиTableAdapter тканиTableAdapter;
+        private Soloveva_OlifirDataSet9 soloveva_OlifirDataSet9;
+        private System.Windows.Forms.BindingSource фурнитураBindingSource;
+        private Soloveva_OlifirDataSet9TableAdapters.ФурнитураTableAdapter фурнитураTableAdapter;
+        private Soloveva_OlifirDataSet10 soloveva_OlifirDataSet10;
+        private System.Windows.Forms.BindingSource тканиBindingSource1;
+        private Soloveva_OlifirDataSet10TableAdapters.ТканиTableAdapter тканиTableAdapter1;
+        private Soloveva_OlifirDataSet11 soloveva_OlifirDataSet11;
+        private System.Windows.Forms.BindingSource тканиBindingSource2;
+        private Soloveva_OlifirDataSet11TableAdapters.ТканиTableAdapter тканиTableAdapter2;
+        private Soloveva_OlifirDataSet12 soloveva_OlifirDataSet12;
+        private System.Windows.Forms.BindingSource фурнитураBindingSource1;
+        private Soloveva_OlifirDataSet12TableAdapters.ФурнитураTableAdapter фурнитураTableAdapter1;
     }
 }
